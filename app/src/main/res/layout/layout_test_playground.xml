@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="#cc000000"
+                android:textSize="18sp"
+                android:id="@+id/que"
+                android:text="what is your name ?"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="match_parent"
+                fresco:fadeDuration="300"
+                android:layout_height="300dp"
+                android:layout_weight="3"
+                fresco:actualImageScaleType="fitCenter"
+                android:id="@+id/ques_img"
+                android:layout_gravity="center_horizontal"
+                fresco:placeholderImage="@drawable/ic_group_work_black_48dp"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear_select_a"
+                android:clickable="true"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/user_wh"
+                    android:id="@+id/option_a_img" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="shri ram choubey"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:textColor="#191919"
+                        android:layout_margin="4dp"
+                        android:id="@+id/option_a"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectB"
+                android:id="@+id/linear_select_b"
+                android:clickable="true"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/user_wh"
+                    android:id="@+id/option_b_img" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="shri ram choubey"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:textColor="#191919"
+                        android:layout_margin="4dp"
+                        android:id="@+id/option_b"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectC"
+                android:clickable="true"
+                android:id="@+id/linear_select_c"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/user_wh"
+                    android:id="@+id/option_c_img" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="shri ram choubey"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:textColor="#191919"
+                        android:layout_margin="4dp"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/option_c"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectD"
+                android:id="@+id/linear_select_d"
+                android:clickable="true"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/user_wh"
+                    android:id="@+id/option_d_img" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="shri ram choubey"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:textColor="#191919"
+                        android:layout_margin="4dp"
+                        android:id="@+id/option_d"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

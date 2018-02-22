@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_test_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardBackgroundColor="#fff"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="3dp"
+                    android:background="?android:selectableItemBackground">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="20dp"
+                        android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="10dp"
+
+                                android:orientation="horizontal"
+                                >
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"/>
+
+                                <com.facebook.drawee.view.SimpleDraweeView
+                                    android:layout_width="0dp"
+                                    fresco:fadeDuration="600"
+                                    android:layout_height="200dp"
+                                    android:elevation="6dp"
+                                    app:roundingBorderColor="#777"
+                                    android:layout_weight="3"
+                                    android:id="@+id/photov"
+                                    fresco:roundAsCircle="true"
+                                    android:layout_gravity="center_horizontal"
+                                    fresco:placeholderImage="@drawable/user_wh"
+                                    />
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"/>
+
+                            </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="name"
+                            android:shadowColor="#999"
+                            android:shadowDx="-2"
+                            android:shadowDy="2"
+                            android:shadowRadius="0.01"
+                            android:textColor="#555"
+                            android:id="@+id/namev"
+                            android:textSize="26sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/emailv"
+                            android:layout_gravity="center_horizontal"
+                            android:text="email"
+                            android:textColor="@color/highlight_textcolor"
+                            android:textSize="20sp"
+                            android:layout_marginTop="12dp"
+                            />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+

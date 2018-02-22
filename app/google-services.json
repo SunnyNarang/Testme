@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1081931356886",
+    "project_id": "firebase-test-me"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081931356886:android:e45957699360883e",
+        "android_client_info": {
+          "package_name": "com.ExodiaSolutions.numeric.testme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081931356886-vkafn3q776cconerudejd2e9vn353ta3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ExodiaSolutions.numeric.testme",
+            "certificate_hash": "17B6F01ED67C837ADB60EB7760902A5E85361C63"
+          }
+        },
+        {
+          "client_id": "1081931356886-75d74cnoa2qhhj95otnaues1h0kujm9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgwz7ZrDhLH7BOjk4OqsVp5sV2BbI3PwY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
